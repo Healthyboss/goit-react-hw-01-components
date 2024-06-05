@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-const FriendList = ({ friends }) => (
+const FriendList = ({ friends, children }) => (
   <ul className="friend-list">
     {friends.map(({ id, isOnline, avatar, name }) => (
       <li key={id}>

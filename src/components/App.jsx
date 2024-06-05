@@ -28,7 +28,14 @@ function App() {
         stats={user.stats}
       />
       <Statistics title="UPLOAD STATS" stats={data} />
-      <FriendList friends={friends} />;
+      <FriendList friends={friends}>
+        <FriendListItem
+          avatar={friends.avatar}
+          name={friends.name}
+          isOnline={friends.isOnline}
+        />
+      </FriendList>
+      ;
     </>
   );
 }
