@@ -2,9 +2,11 @@ import Profile from "./Profile";
 import Statistics from "./Statistics";
 import FriendList from "./FriendList";
 import FriendListItem from "./FriendListItem";
+import TransactionHistory from "./TransactionHistory";
 import user from "../data/user.json";
 import data from "../data/data.json";
 import friends from "../data/friends.json";
+import transactions from "../data/transactions.json";
 
 function App() {
   return (
@@ -35,7 +37,7 @@ function App() {
           isOnline={friends.isOnline}
         />
       </FriendList>
-      ;
+      <TransactionHistory items={transactions} />
     </>
   );
 }
