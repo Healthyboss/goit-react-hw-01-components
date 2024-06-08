@@ -1,7 +1,6 @@
 import Profile from "./Profile";
 import Statistics from "./Statistics";
 import FriendList from "./FriendList";
-import FriendListItem from "./FriendListItem";
 import TransactionHistory from "./TransactionHistory";
 import user from "../data/user.json";
 import data from "../data/data.json";
@@ -18,7 +17,7 @@ function App() {
           justifyContent: "center",
           alignItems: "center",
           fontSize: 40,
-          color: "#010101",
+          color: "#00ff00",
         }}>
         React Homework Template (Vite)
       </h1>
@@ -30,13 +29,7 @@ function App() {
         stats={user.stats}
       />
       <Statistics title="UPLOAD STATS" stats={data} />
-      <FriendList friends={friends}>
-        <FriendListItem
-          avatar={friends.avatar}
-          name={friends.name}
-          isOnline={friends.isOnline}
-        />
-      </FriendList>
+      <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
     </>
   );
