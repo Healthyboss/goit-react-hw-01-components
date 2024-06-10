@@ -1,0 +1,16 @@
+.friendItem {
+  display: flex;
+  margin: auto;
+  margin-bottom: 10px;
+  list-style: none;
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 10px;
+  width: 200px;
+}
+
+.status.online {
+  background-color: green;
+}

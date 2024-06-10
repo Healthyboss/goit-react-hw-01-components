@@ -12,12 +12,12 @@ function App() {
     <>
       <h1
         style={{
-          height: "100vh",
+          height: "100%",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          fontSize: 40,
-          color: "#00ff00",
+          fontSize: 30,
+          color: "black",
         }}>
         React Homework Template (Vite)
       </h1>

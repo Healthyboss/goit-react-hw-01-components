@@ -1,0 +1,40 @@
+.section {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+  padding: 30px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.title {
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.statlist {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.listItem {
+  flex: 1;
+  padding: 10px;
+  color: rgb(8, 8, 8);
+  border-radius: 5px;
+}
+
+.label {
+  font-size: 1em;
+  margin: 0;
+}
+
+.percentage {
+  font-size: 1.2em;
+  margin: 0;
+  font-weight: bold;
+}

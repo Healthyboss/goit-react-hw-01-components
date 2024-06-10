@@ -1,0 +1,10 @@
+@import-normalize;
+
+body {
+  background-color: #f3f4f4;
+  font-family: Arial, sans-serif;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: auto;
+}

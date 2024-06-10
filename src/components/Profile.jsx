@@ -1,5 +1,6 @@
 import { Component } from "react";
 import PropTypes from "prop-types";
+import css from "./Profile.module.css";
 
 export default class Profile extends Component {
   static propTypes = {
@@ -15,26 +16,30 @@ export default class Profile extends Component {
   };
   render() {
     return (
-      <div className="profile">
-        <div className="description">
-          <img src={this.props.avatar} alt="User avatar" className="avatar" />
-          <p className="name">{this.props.username}</p>
-          <p className="tag">{this.props.tag}</p>
-          <p className="location">{this.props.location}</p>
+      <div className={css.profile}>
+        <div className={css.description}>
+          <img
+            src={this.props.avatar}
+            alt="User avatar"
+            className={css.avatar}
+          />
+          <p className={css.username}>{this.props.username}</p>
+          <p className={css.tag}>{this.props.tag}</p>
+          <p className={css.location}>{this.props.location}</p>
         </div>
 
-        <ul className="stats">
-          <li>
-            <span className="label">Followers: </span>
-            <span className="quantity">{this.props.stats.followers}</span>
+        <ul className={css.stats}>
+          <li className={css.list}>
+            <span className={css.label}>Followers: </span>
+            <span className={css.quantity}>{this.props.stats.followers}</span>
           </li>
-          <li>
-            <span className="label">Views: </span>
-            <span className="quantity">{this.props.stats.views}</span>
+          <li className={css.list}>
+            <span className={css.label}>Views: </span>
+            <span className={css.quantity}>{this.props.stats.views}</span>
           </li>
-          <li>
-            <span className="label">Likes: </span>
-            <span className="quantity">{this.props.stats.likes}</span>
+          <li className={css.list}>
+            <span className={css.label}>Likes: </span>
+            <span className={css.quantity}>{this.props.stats.likes}</span>
           </li>
         </ul>
       </div>
