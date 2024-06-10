@@ -1,0 +1,28 @@
+.transactionHistory {
+  width: 640px;
+  margin: auto;
+  font-size: 16px;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tableHeader {
+  background-color: #00bcd4;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: white;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.tableCell {
+  padding: 10px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: white;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #e6e8e9;
+}
